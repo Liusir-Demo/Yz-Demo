@@ -123,10 +123,10 @@ main {
   border: 1px solid rgba(0, 97, 63, 0.16);
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 97, 63, 0.12);
-  height: 56px;
+  height: 66px;
   object-fit: contain;
-  padding: 5px;
-  width: 84px;
+  padding: 6px;
+  width: 102px;
 }
 
 .nav-links {
@@ -250,25 +250,13 @@ h1 {
   overflow: hidden;
 }
 
-.poster-svg {
+.poster-photo {
   display: block;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
-
-@keyframes floatStar {
-  0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
-  50%      { transform: translateY(-6px) scale(1.15); opacity: 1; }
-}
-
-.poster-svg g[filter] polygon {
-  animation: floatStar 3s ease-in-out infinite;
-}
-.poster-svg g[filter] polygon:nth-child(2) { animation-delay: 0.5s; }
-.poster-svg g[filter] polygon:nth-child(3) { animation-delay: 1s; }
-.poster-svg g[filter] polygon:nth-child(4) { animation-delay: 1.5s; }
-.poster-svg g[filter] polygon:nth-child(5) { animation-delay: 2s; }
-.poster-svg g[filter] polygon:nth-child(6) { animation-delay: 2.5s; }
 
 .poster-tag {
   background: linear-gradient(90deg, #FF6B6B, #FF8E53);
@@ -432,10 +420,14 @@ main {
   margin-bottom: 16px;
 }
 
-.game-poster {
+.game-poster-image {
   display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
   border-radius: 10px;
+  box-shadow: 0 10px 26px rgba(0, 97, 63, 0.14);
 }
 
 .game-content {
